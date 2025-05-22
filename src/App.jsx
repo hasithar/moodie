@@ -2,7 +2,7 @@ import { useState } from "react";
 import Search from "./components/Search/Search.componet";
 
 function App() {
-  const [searchterm, setSearchterm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <main>
@@ -17,7 +17,8 @@ function App() {
           </h1>
         </header>
 
-        <Search searchterm={searchterm} setSearchterm={setSearchterm} />
+        <Search searchterm={searchTerm} setSearchTerm={setSearchTerm} />
+        <h1 className="text-white">{searchTerm}</h1>
       </div>
     </main>
   );
